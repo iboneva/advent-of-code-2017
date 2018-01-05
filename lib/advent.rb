@@ -134,13 +134,11 @@ module Advent
 
     while position >= 0 && position < i.size
       new_position = position + i[position]
-      puts "old: #{i[position]}"
-      if position < 3
+      if i[position] < 3
         i[position] += 1
       else
         i[position] -= 1
       end
-      puts "new: #{i[position]}"
       position = new_position
       steps += 1
     end
